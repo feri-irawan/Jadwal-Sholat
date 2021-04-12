@@ -50,7 +50,10 @@ $cari = json_decode($cari, true);
     </form>
     <pre>
       <code>
-        <?php print_r($cari)?>
+        <?php
+        var_dump($_GET["kota"]);
+        print_r($cari)
+        ?>
       </code>
     </pre>
   </section>
