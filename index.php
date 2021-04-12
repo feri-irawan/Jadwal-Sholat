@@ -59,8 +59,11 @@ $cari = json_decode($cari, true);
         tagify = new Tagify(input, {
             mode : "select",
             whitelist: [
-              "satu",
-              "dua"
+              <?php
+              foreach ($kota as $row) {
+                echo "\"$row['lokasi']\",";
+              }
+              ?>
               ],
             blacklist: ['foo', 'bar'],
             keepInvalidTags: true,   // do not auto-remove invalid tags
