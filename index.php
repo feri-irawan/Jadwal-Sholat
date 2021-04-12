@@ -33,7 +33,7 @@ $kota = json_decode($kota, true);
 
   <section class="container">
     <form action="" method="get">
-      <input name="kota" class="selectMode form-control" placeholder="Please select" />
+      <input name="kota" class="selectMode form-control" placeholder="Pilih Kabupaten/Kota" />
     </form>
     <pre>
       <code>
