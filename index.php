@@ -75,7 +75,7 @@ $jadwal = json_decode($jadwal, true);
       <code>
         <?php
         print_r($cari);
-        print_r("=================");
+        print_r("=================\n");
         print_r($jadwal);
         ?>
       </code>
