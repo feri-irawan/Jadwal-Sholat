@@ -33,13 +33,7 @@ $kota = json_decode($kota, true);
 
   <section class="container">
     <form action="" method="get">
-      <select name="kota" class="form-select mb-3">
-        <optgroup label="Pilih Kabupaten/Kota">
-        <?php for ($i=0; $i < count($kota); $i++): ?>
-            <option value="<?=$i?>"><?=$kota[$i]?></option>
-        <?php endfor; ?>
-        </optgroup>
-      </select>
+      <input name="kota" class="selectMode form-control" placeholder="Please select" />
     </form>
     <pre>
       <code>
@@ -49,5 +43,20 @@ $kota = json_decode($kota, true);
   </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.css" type="text/css" media="all" />
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      var input = document.querySelector('input[name=kota]'),
+      tagify = new Tagify(input, {
+          mode : "select",
+          whitelist: [<?php for($i=0;$i<count($kota);$i++) {echo $kota[$i]}?>],
+          blacklist: ['foo', 'bar'],
+          keepInvalidTags: true,   // do not auto-remove invalid tags
+          dropdown: {
+              // closeOnSelect: false
+          }
+      });
+    </script>
+
   </body>
 </html>
