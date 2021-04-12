@@ -39,7 +39,7 @@ $cari = json_decode($cari, true);
 
   <section class="container">
     <form action="" method="get">
-      <select name="kota">
+      <select name="kota" class="form-select mb-3">
         <?php for ($i = 0; $i < count($kota); $i++): ?>
         <option value="<?=$kota[$i]?>"><?=$kota[$i]?></option>
         <?php endfor;?>
