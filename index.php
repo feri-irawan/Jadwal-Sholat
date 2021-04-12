@@ -1,7 +1,7 @@
 <?php
 
 // Waktu
-date_default_timezone_set("Asia");
+date_default_timezone_set("Asia/Makassar");
 $waktu = date("Y/m/d");
 
 // Mengambil ID Kota
