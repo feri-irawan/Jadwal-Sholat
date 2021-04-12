@@ -1,8 +1,12 @@
 <?php
 $kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/semua");
 $kota = json_decode($kota, true);
+if (isset($_GET["kota"])) {
+  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
+} else {
+  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
+}
 
-$cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
 $cari = json_decode($cari, true);
 ?>
 
@@ -42,7 +46,7 @@ $cari = json_decode($cari, true);
     </form>
     <pre>
       <code>
-        <?php print_r($kota)?>
+        <?php print_r($cari)?>
       </code>
     </pre>
   </section>
