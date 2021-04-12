@@ -1,12 +1,7 @@
 <?php
-$kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/semua");
+$kota = file_get_contents("https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/kota.json");
 $kota = json_decode($kota, true);
 if (isset($_GET["kota"])) {
-  $url = urldecode($_GET["kota"]);
-  $replace_from = array("[");
-  $replace_to = "";
-  $namakota = str_replace($replace_from, $replace_to, $url);
-  
   $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
 } else {
   $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
