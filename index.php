@@ -56,7 +56,6 @@ $kota = json_decode($kota, true);
             }
             ?>
             ],
-          blacklist: ['foo', 'bar'],
           keepInvalidTags: true,   // do not auto-remove invalid tags
           dropdown: {
               // closeOnSelect: false
