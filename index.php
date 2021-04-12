@@ -53,10 +53,10 @@ $jadwal = json_decode($jadwal, true);
           <input type="text" name="kota" class="form-control mb-3" placeholder="Tulis Kabupaten/Kota Anda" required/>
         </div>
         <div class="col">
-          <select name="timezone">
-            <option value="WIB">WIB (Waktu Indonesia Barat)</option>
-            <option value="WIB">WITA (Waktu Indonesia Tengah)</option>
-            <option value="WIB">WIT (Waktu Indonesia Timur)</option>
+          <select name="timezone" class="form-select mb-3">
+            <option value="Jakarta">WIB (Waktu Indonesia Barat)</option>
+            <option value="Makassar">WITA (Waktu Indonesia Tengah)</option>
+            <option value="Jayapura">WIT (Waktu Indonesia Timur)</option>
           </select>
         </div>
       </div>
