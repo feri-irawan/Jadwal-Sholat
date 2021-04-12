@@ -56,6 +56,7 @@ $cari = json_decode($cari, true);
       <code>
         <?php
         echo($_GET["kota"]);
+        echo($kota);
         print_r($cari)
         ?>
       </code>
