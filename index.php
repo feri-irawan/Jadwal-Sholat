@@ -1,5 +1,5 @@
 <?php
-$kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/semua");
+$kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
 $kota = json_decode($kota, true);
 ?>
 
