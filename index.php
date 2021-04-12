@@ -54,9 +54,9 @@ $jadwal = json_decode($jadwal, true);
     <pre>
       <code>
         <?php
-        print_r($cari)
-        print_r("=================")
-        print_r($jadwal)
+        print_r($cari);
+        print_r("=================");
+        print_r($jadwal);
         ?>
       </code>
     </pre>
