@@ -44,9 +44,11 @@ $cari = json_decode($cari, true);
   <section class="container">
     <form action="" method="get">
       <select name="kota" class="form-select mb-3">
-        <?php for ($i = 0; $i < count($kota); $i++): ?>
-        <option value="<?=$kota[$i]?>"><?=$kota[$i]?></option>
-        <?php endfor;?>
+        <optgroup label="Pilih Kabupaten/Kota">
+          <?php for ($i = 0; $i < count($kota); $i++): ?>
+          <option value="<?=$kota[$i]?>"><?=$kota[$i]?></option>
+          <?php endfor;?>
+        </optgroup>
       </select>
       <button type="submit" class="btn btn-primary"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></button>
     </form>
