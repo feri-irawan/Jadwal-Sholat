@@ -51,7 +51,7 @@ $jadwal = json_decode($jadwal, true);
       <div class="row g-3">
         <div class="col">
           <label for="kota">Kota</label>
-          <input id="kota" type="text" name="kota" class="form-control mb-3" placeholder="Tulis Kabupaten/Kota Anda" required/>
+          <input id="kota" type="text" name="kota" class="form-control mb-3" placeholder="Tulis.." required/>
         </div>
         <div class="col">
           <label for="zona">Zona Waktu</label>
