@@ -19,8 +19,6 @@ $cari = json_decode($cari, true);
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.css" type="text/css" media="all" />
-
     <title>Hello, world!</title>
   </head>
   <body>
@@ -51,7 +49,7 @@ $cari = json_decode($cari, true);
     <pre>
       <code>
         <?php
-        echo($url);
+        echo($_GET["kota"]);
         print_r($cari)
         ?>
       </code>
@@ -59,25 +57,5 @@ $cari = json_decode($cari, true);
   </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.min.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-    var input = document.querySelector('input[name=kota]'),
-        tagify = new Tagify(input, {
-            mode : "select",
-            whitelist: [
-              <?php
-              foreach ($kota as $row):
-                echo "\"".$row["lokasi"]."\",";
-              endforeach;
-              ?>
-              ],
-            blacklist: ['foo', 'bar'],
-            keepInvalidTags: true,   // do not auto-remove invalid tags
-            dropdown: {
-                // closeOnSelect: false
-            }
-        });
-    </script>
- 
   </body>
 </html>
