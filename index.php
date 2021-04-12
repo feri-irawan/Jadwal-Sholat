@@ -33,9 +33,11 @@ $kota = json_decode($kota, true);
     
     <form action="" method="get">
       <select name="kota" class="form-select mb-3">
-        <?php foreach ($kota as $row): ?>
-          
-        <?php endforeach; ?>
+        <optgroup label="Pilih Kabupaten/Kota">
+        <?php for ($i=0; $i <= count($kota); $i++): ?>
+            <option value="<?=$i?>"></option>
+        <?php endfor; ?>
+        </optgroup>
       </select>
     </form>
 <pre>
