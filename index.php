@@ -2,7 +2,7 @@
 $kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/semua");
 $kota = json_decode($kota, true);
 if (isset($_GET["kota"])) {
-  $url = urlencode($_GET["kota"])
+  $url = urlencode($_GET["kota"]);
   $replace_from = array("[", "{", "\"", ":", "}", "]");
   $replace_to = "";
   $namakota = str_replace($replace_from, $replace_to, $url);
