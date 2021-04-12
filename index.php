@@ -55,7 +55,7 @@ $cari = json_decode($cari, true);
     <pre>
       <code>
         <?php
-        var_dump($namakota);
+        echo($namakota);
         print_r($cari)
         ?>
       </code>
