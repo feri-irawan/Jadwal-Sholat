@@ -49,7 +49,7 @@ $kota = json_decode($kota, true);
       var input = document.querySelector('input[name=kota]'),
       tagify = new Tagify(input, {
           mode : "select",
-          whitelist: [<?php for($i=0;$i<count($kota);$i++) {echo $kota[$i]}?>],
+          whitelist: [<?php for($i=0;$i<count($kota);$i++) {echo "\"$kota[$i]\","}?>],
           blacklist: ['foo', 'bar'],
           keepInvalidTags: true,   // do not auto-remove invalid tags
           dropdown: {
