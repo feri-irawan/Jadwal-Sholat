@@ -1,6 +1,9 @@
 <?php
-$kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
+$kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/semua");
 $kota = json_decode($kota, true);
+
+$cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
+$cari = json_decode($cari, true);
 ?>
 
 <!doctype html>
@@ -49,5 +52,23 @@ $kota = json_decode($kota, true);
   </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.css" type="text/css" media="all" />
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    var input = document.querySelector('input[name=tags-select-mode]'),
+        tagify = new Tagify(input, {
+            mode : "select",
+            whitelist: [
+              "satu",
+              "dua"
+              ],
+            blacklist: ['foo', 'bar'],
+            keepInvalidTags: true,   // do not auto-remove invalid tags
+            dropdown: {
+                // closeOnSelect: false
+            }
+        });
+    </script>
+ 
   </body>
 </html>
