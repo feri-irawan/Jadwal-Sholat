@@ -36,13 +36,7 @@ $cari = json_decode($cari, true);
 
   <section class="container">
     <form action="" method="get">
-      <select name="kota" class="form-select mb-3">
-        <optgroup label="Pilih Kabupaten/Kota">
-        <?php foreach ($kota as $row): ?>
-          <option value="<?=$row["id"]?>"><?=$row["lokasi"]?></option>
-        <?php endforeach; ?>
-        </optgroup>
-      </select>
+      <input name="kota" class="selectMode form-control" placeholder="Tulis kabupaten/kota Anda" />
     </form>
     <pre>
       <code>
@@ -55,7 +49,7 @@ $cari = json_decode($cari, true);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.css" type="text/css" media="all" />
     <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.0.3/dist/tagify.min.js" type="text/javascript" charset="utf-8"></script>
     <script>
-    var input = document.querySelector('input[name=tags-select-mode]'),
+    var input = document.querySelector('input[name=kota]'),
         tagify = new Tagify(input, {
             mode : "select",
             whitelist: [
