@@ -16,6 +16,7 @@ $idKota = $cari["data"][0]["id"];
 
 // Mendapatkan Jadwal Sholat
 $jadwal = file_get_contents("https://api.myquran.com/v1/sholat/jadwal/$idKota/$waktu");
+$jadwal = json_decode($jadwal, true);
 ?>
 
 <!doctype html>
@@ -54,6 +55,8 @@ $jadwal = file_get_contents("https://api.myquran.com/v1/sholat/jadwal/$idKota/$w
       <code>
         <?php
         print_r($cari)
+        print_r("=================")
+        print_r($jadwal)
         ?>
       </code>
     </pre>
