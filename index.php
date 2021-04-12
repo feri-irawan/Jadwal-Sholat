@@ -3,6 +3,10 @@
 $kota = file_get_contents("https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/kota.json");
 $kota = json_decode($kota, true);
 
+// Waktu
+date_default_timezone_set("Asia");
+$tahun = date("Y");
+
 // Pilih Jadwal Sholat Berdasarkan Kota
 if (isset($_GET["kota"])) {
   $cari = file_get_contents("https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/adzan/$getKota/$tahun/12.json");
