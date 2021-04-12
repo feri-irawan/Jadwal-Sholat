@@ -5,9 +5,9 @@ $kota = json_decode($kota, true);
 
 // Pilih Jadwal Sholat Berdasarkan Kota
 if (isset($_GET["kota"])) {
-  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/".$_GET["kota"]);
+  $cari = file_get_contents("https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/adzan/$getKota/$tahun/12.json");
 } else {
-  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/ambarawa");
+  $cari = file_get_contents("https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/adzan/bulukumba/$tahun/12.json");
 }
 $cari = json_decode($cari, true);
 
