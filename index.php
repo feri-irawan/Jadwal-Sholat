@@ -51,7 +51,7 @@ $jadwal = json_decode($jadwal, true);
       <div class="row">
         <div class="col-8">
           <label for="kota">Kota</label>
-          <input id="kota" type="text" name="kota" class="form-control mb-3" placeholder="Tulis.." required/>
+          <input id="kota" type="text" name="kota" class="form-control mb-3" placeholder="Tulis.." autofocus required/>
         </div>
         <div class="col-4">
           <label for="zona">Zona Waktu</label>
