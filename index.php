@@ -48,12 +48,12 @@ $jadwal = json_decode($jadwal, true);
 
   <section class="container">
     <form action="" method="get">
-      <div class="row g-3">
-        <div class="col">
+      <div class="row">
+        <div class="col-8">
           <label for="kota">Kota</label>
           <input id="kota" type="text" name="kota" class="form-control mb-3" placeholder="Tulis.." required/>
         </div>
-        <div class="col">
+        <div class="col-4">
           <label for="zona">Zona Waktu</label>
           <select id="zona" name="timezone" class="form-select mb-3">
             <option value="Jakarta">WIB</option>
