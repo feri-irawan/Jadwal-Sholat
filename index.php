@@ -44,11 +44,7 @@ $cari = json_decode($cari, true);
         <option value="<?=$kota[$i]?>"><?=$kota[$i]?></option>
         <?php endfor;?>
       </select>
-      <div class="row">
-        <div class="col text-end">
-          <button type="submit" class="btn btn-primary"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></button>
-        </div>
-      </div>
+      <button type="submit" class="btn btn-primary"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></button>
     </form>
     <pre>
       <code>
