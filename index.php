@@ -55,7 +55,7 @@ $cari = json_decode($cari, true);
             whitelist: [
               <?php
               foreach ($kota as $row):
-                echo $row['lokasi'];
+                echo $row["lokasi"];
               endforeach;
               ?>
               ],
