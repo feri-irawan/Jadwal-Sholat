@@ -1,13 +1,17 @@
 <?php
+// Daftar Kota
 $kota = file_get_contents("https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/kota.json");
 $kota = json_decode($kota, true);
-if (isset($_GET["kota"])) {
-  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
-} else {
-  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/kediri");
-}
 
+// Pilih Jadwal Sholat Berdasarkan Kota
+if (isset($_GET["kota"])) {
+  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/".$_GET["kota"]);
+} else {
+  $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/ambarawa");
+}
 $cari = json_decode($cari, true);
+
+
 ?>
 
 <!doctype html>
