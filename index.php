@@ -2,9 +2,9 @@
 
 // Waktu
 date_default_timezone_set("Asia");
-$tahun = date("Y");
+$waktu = date("Y/m/d");
 
-// Pilih Jadwal Sholat Berdasarkan Kota
+// Mengambil ID Kota
 if (isset($_GET["kota"])) {
   $getKota = $_GET["kota"];
   $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/$getKota");
@@ -12,8 +12,10 @@ if (isset($_GET["kota"])) {
   $cari = file_get_contents("https://api.myquran.com/v1/sholat/kota/cari/bulukumba");
 }
 $cari = json_decode($cari, true);
+$idKota = $cari["data"][0]["id"];
 
-
+// Mendapatkan Jadwal Sholat
+$jadwal = file_get_contents("https://api.myquran.com/v1/sholat/jadwal/$idKota/$waktu");
 ?>
 
 <!doctype html>
