@@ -1,5 +1,5 @@
 <?php
-$kota = file_get_contents("https://raw.githubusercontent.com/lakuapik/jadwalsholatorg/master/kota.json");
+$kota = file_get_contents("https://api.myquran.com/v1/sholat/kota/semua");
 $kota = json_decode($kota, true);
 ?>
 
