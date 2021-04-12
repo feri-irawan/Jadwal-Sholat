@@ -67,7 +67,7 @@ $jadwal = json_decode($jadwal, true);
         </div>
         <div class="col-4">
           <label for="zona">Zona Waktu</label>
-          <select id="zona" name="timezone" class="form-select mb-3">
+          <select id="zona" name="timezone" class="form-select">
             <option value="Jakarta">WIB</option>
             <option value="Makassar">WITA</option>
             <option value="Jayapura">WIT</option>
