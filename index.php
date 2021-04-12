@@ -48,7 +48,19 @@ $jadwal = json_decode($jadwal, true);
 
   <section class="container">
     <form action="" method="get">
-      <input type="text" name="kota" class="form-control mb-3" placeholder="Tulis Kabupaten/Kota Anda" required/>
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" name="kota" class="form-control mb-3" placeholder="Tulis Kabupaten/Kota Anda" required/>
+        </div>
+        <div class="col">
+          <select name="timezone">
+            <option value="WIB">WIB (Waktu Indonesia Barat)</option>
+            <option value="WIB">WITA (Waktu Indonesia Tengah)</option>
+            <option value="WIB">WIT (Waktu Indonesia Timur)</option>
+          </select>
+        </div>
+      </div>
+      
       <button type="submit" class="btn btn-primary"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></button>
     </form>
     <pre>
