@@ -17,7 +17,7 @@ $kota = json_decode($kota, true);
   </head>
   <body>
     
-    <header>
+  <header>
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -30,7 +30,8 @@ $kota = json_decode($kota, true);
         </div>
       </nav>
     </header>
-    
+
+  <section class="container">
     <form action="" method="get">
       <select name="kota" class="form-select mb-3">
         <optgroup label="Pilih Kabupaten/Kota">
@@ -40,11 +41,13 @@ $kota = json_decode($kota, true);
         </optgroup>
       </select>
     </form>
-<pre>
-  <code>
-    <?php print_r($kota)?>
-  </code>
-</pre>
+    <pre>
+      <code>
+        <?php print_r($kota)?>
+      </code>
+    </pre>
+  </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
