@@ -2,10 +2,12 @@
 
 // Waktu
 if (isset($_GET["timezone"])) {
-  date_default_timezone_set("Asia/$_GET['timezone']");
+  $timezone = $_GET["timezone"];
+  date_default_timezone_set("Asia/$timezone");
 } else {
   date_default_timezone_set("Asia/Makassar");
 }
+
 $waktu = date("Y/m/d");
 
 // Mengambil ID Kota
