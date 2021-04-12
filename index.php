@@ -18,7 +18,7 @@ $kota = json_decode($kota, true);
   <body>
     
   <header>
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-light bg-light mb-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
