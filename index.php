@@ -54,7 +54,9 @@ $cari = json_decode($cari, true);
             mode : "select",
             whitelist: [
               <?php
-              echo "\"red\",";
+              foreach ($kota as $row):
+                echo "\"$row['lokasi']\"";
+              endforeach;
               ?>
               ],
             blacklist: ['foo', 'bar'],
