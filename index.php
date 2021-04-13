@@ -74,7 +74,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              Secara default Jadwal Sholat saat ini untuk daerah <b>Bulukumba</b>. Oleh karena itu silahkan lengkapi formulir berikut untuk menampilkan Jadwal Sholat di daerah lainnya.
+              Secara default Jadwal Sholat saat ini untuk daerah <b>Kab. Bulukumba</b>. Oleh karena itu silahkan lengkapi formulir berikut untuk menampilkan Jadwal Sholat di daerah lainnya.
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Saya mengerti</button>
