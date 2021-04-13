@@ -225,6 +225,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
     <script type="text/javascript">
     window.addEventListener('load', function () {
        getMap();
+       document.getElementById("staticBackdrop").modal("show");
     }, false); 
     function getMap() {
         var latitude = <?=$jadwal["data"]["koordinat"]["lat"]?>;
