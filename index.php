@@ -32,9 +32,9 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
 function format_hari_tanggal($waktu) {
     // Hari
     $hari_array = ["Ahad", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"]
-    $hr = date('w', strtotime($waktu));
+    $hr = date("w", strtotime($waktu));
     $hari = $hari_array[$hr];
-    $tanggal = date('j', strtotime($waktu));
+    $tanggal = date("j", strtotime($waktu));
     
     // Bulan
     $bulan_array = [
@@ -51,10 +51,10 @@ function format_hari_tanggal($waktu) {
         11 => 'November',
         12 => 'Desember',
     ];
-    $bl = date('n', strtotime($waktu));
+    $bl = date("n", strtotime($waktu));
     $bulan = $bulan_array[$bl];
-    $tahun = date('Y', strtotime($waktu));
-    $jam = date( 'H:i:s', strtotime($waktu));
+    $tahun = date("Y", strtotime($waktu));
+    $jam = date( "H:i:s", strtotime($waktu));
     
     //untuk menampilkan hari, tanggal bulan tahun jam
     //return "$hari, $tanggal $bulan $tahun $jam";
