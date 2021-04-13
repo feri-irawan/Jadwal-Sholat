@@ -198,7 +198,9 @@ $jadwal = json_decode($jadwal, true);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script type="text/javascript">
     window.addEventListener('load', function () {
-      function getMap(latitude, longitude) {
+      function getMap();
+    }, false); 
+    function getMap(latitude, longitude) {
         var map = new ol.Map({
           target: 'map',
           controls: ol.control.defaults({ attribution: false }),
@@ -213,7 +215,6 @@ $jadwal = json_decode($jadwal, true);
           })
         });
       }
-    }, false); 
     </script>
   </body>
 </html>
