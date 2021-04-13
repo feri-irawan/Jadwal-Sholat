@@ -115,7 +115,7 @@ $jadwal = json_decode($jadwal, true);
       ?>
     </div>
     
-    <div id="map" class="map" onload="getMap(<?=$jadwal["data"]["koordinat"]["lat"]?>,<?=$jadwal["data"]["koordinat"]["lon"]?>)"></div>
+    <div id="map" class="map"></div>
     
     <!-- Jadwal Sholat -->
     <h5 class="mt-3 ms-3 me-3">JADWAL</h5>
@@ -200,7 +200,9 @@ $jadwal = json_decode($jadwal, true);
     window.addEventListener('load', function () {
       function getMap();
     }, false); 
-    function getMap(latitude, longitude) {
+    function getMap() {
+        var latitude = <?=$jadwal["data"]["koordinat"]["lat"]?>;
+        var longitude = <?=$jadwal["data"]["koordinat"]["lon"]?>;
         var map = new ol.Map({
           target: 'map',
           controls: ol.control.defaults({ attribution: false }),
