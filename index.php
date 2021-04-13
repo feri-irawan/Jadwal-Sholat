@@ -213,6 +213,13 @@ $jadwal = json_decode($jadwal, true);
               source: new ol.source.OSM()
             })
           ],
+          interactions: ol.interaction.defaults({
+            dragPan: false,
+            mouseWheelZoom: false
+          }).extend([
+            new ol.interaction.DragPan({kinetic: false}),
+            new ol.interaction.MouseWheelZoom({duration: 0})
+          ]),
           view: new ol.View({
             center: ol.proj.fromLonLat([longitude, latitude]),
             zoom: 12
