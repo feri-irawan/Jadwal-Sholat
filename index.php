@@ -27,6 +27,45 @@ $jadwal = json_decode($jadwal, true);
 
 // Icon Sholat
 $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
+
+// Function hari, tanggal, tahun
+function format_hari_tanggal($waktu) {
+    // Hari
+    $hari_array = ["Ahad", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"]
+    $hr = date('w', strtotime($waktu));
+    $hari = $hari_array[$hr];
+    $tanggal = date('j', strtotime($waktu));
+    
+    // Bulan
+    $bulan_array = [
+        1 => 'Januari',
+        2 => 'Februari',
+        3 => 'Maret',
+        4 => 'April',
+        5 => 'Mei',
+        6 => 'Juni',
+        7 => 'Juli',
+        8 => 'Agustus',
+        9 => 'September',
+        10 => 'Oktober',
+        11 => 'November',
+        12 => 'Desember',
+    ];
+    $bl = date('n', strtotime($waktu));
+    $bulan = $bulan_array[$bl];
+    $tahun = date('Y', strtotime($waktu));
+    $jam = date( 'H:i:s', strtotime($waktu));
+    
+    //untuk menampilkan hari, tanggal bulan tahun jam
+    //return "$hari, $tanggal $bulan $tahun $jam";
+
+    //untuk menampilkan hari, tanggal bulan tahun
+    return "$hari, $tanggal $bulan $tahun";
+}
+?>
+
+
+
 ?>
 
 <!doctype html>
@@ -152,6 +191,9 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
         <div class="tab-pane fade show active" id="nav-two">
           <!-- Jadwal Sholat -->
           <div id="jadwal">
+            <div class="row shadow-sm p-3 m-2 rounded">
+              
+            </div>
             <div class="row shadow-sm p-3 m-2 rounded">
               <div class="col">
                 <b>Imsak</b>
