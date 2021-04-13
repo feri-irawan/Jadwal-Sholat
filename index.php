@@ -98,12 +98,12 @@ $jadwal = json_decode($jadwal, true);
     
     <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button">Lokasi</button>
-        <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button">Jadwal Sholat</button>
+        <button class="nav-link" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button">Lokasi</button>
+        <button class="nav-link active" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button">Jadwal Sholat</button>
       </div>
     </nav>
     <div class="tab-content">
-      <div class="tab-pane fade show active" id="nav-one">
+      <div class="tab-pane fade" id="nav-one">
         <!-- Info Lokasi -->
         <div id="lokasi" class="border border-1 shadow-sm p-3 mt-3 rounded">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0c-3.148 0-6 2.553-6 5.702 0 4.682 4.783 5.177 6 12.298 1.217-7.121 6-7.616 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 16l-6.707-2.427-5.293 2.427-5.581-2.427-6.419 2.427 4-9 3.96-1.584c.38.516.741 1.08 1.061 1.729l-3.523 1.41-1.725 3.88 2.672-1.01 1.506-2.687-.635 3.044 4.189 1.789.495-2.021.465 2.024 4.15-1.89-.618-3.033 1.572 2.896 2.732.989-1.739-3.978-3.581-1.415c.319-.65.681-1.215 1.062-1.731l4.021 1.588 3.936 9z"/></svg>
@@ -129,7 +129,7 @@ $jadwal = json_decode($jadwal, true);
         </div>
       </div>
       
-      <div class="tab-pane fade" id="nav-two">
+      <div class="tab-pane fade show active" id="nav-two">
         <!-- Jadwal Sholat -->
         <div id="jadwal">
           <div class="row shadow-sm p-3 m-2 rounded">
@@ -199,8 +199,6 @@ $jadwal = json_decode($jadwal, true);
         </div>
       </div>
     </div>
-    
-    
   </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
