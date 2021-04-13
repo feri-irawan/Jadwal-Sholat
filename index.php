@@ -64,7 +64,7 @@ $jadwal = json_decode($jadwal, true);
     </header>
 
   <section class="container">
-    <form class="mb-3" action="" method="get">
+    <form class="m-3" action="" method="get">
       <div class="row">
         <div class="col-7">
           
