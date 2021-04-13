@@ -223,10 +223,14 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script type="text/javascript">
+    
+    // Run Functions After Loading Page
     window.addEventListener('load', function () {
        getMap();
-       document.getElementById("staticBackdrop").modal("show");
+       showModal();
     }, false); 
+    
+    // Get Map
     function getMap() {
         var latitude = <?=$jadwal["data"]["koordinat"]["lat"]?>;
         var longitude = <?=$jadwal["data"]["koordinat"]["lon"]?>;
@@ -251,6 +255,14 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
           })
         });
       }
+      
+    // Modal Function
+    function showModal() {
+      var myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"), {});
+      document.onreadystatechange = function () {
+        myModal.show();
+      }
+    }
     </script>
   </body>
 </html>
