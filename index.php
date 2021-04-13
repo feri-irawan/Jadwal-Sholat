@@ -95,6 +95,17 @@ $jadwal = json_decode($jadwal, true);
       <button type="submit" class="btn btn-primary"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></button>
     </form>
     
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button">Info Lokasi</button>
+        <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button">Jadwal Sholat</button>
+      </div>
+    </nav>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="nav-one">...</div>
+      <div class="tab-pane fade" id="nav-two">...</div>
+    </div>
+    
     <!-- Info Lokasi -->
     <h5 class="mt-3 ms-3 me-3">INFO LOKASI</h5>
     <div id="lokasi" class="border border-1 shadow-sm p-3 m-3 rounded">
