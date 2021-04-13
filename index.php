@@ -77,7 +77,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
               Secara default Jadwal Sholat saat ini untuk daerah Bulukumba. Oleh karena itu silahkan lengkapi formulir berikut untuk menampilkan Jadwal Sholat di daerah lainnya.
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Saya mengerti</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Saya mengerti</button>
             </div>
           </div>
         </div>
