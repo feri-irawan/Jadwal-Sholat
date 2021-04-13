@@ -65,7 +65,9 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
         </div>
       </nav>
     </header>
+    
     <!-- Modal -->
+    <?php if (!isset($_GET["kota"])): ?>
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -82,6 +84,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
           </div>
         </div>
       </div>
+    <?php endif; ?>
 
     <section class="container">
       <form class="mb-3" action="" method="get">
