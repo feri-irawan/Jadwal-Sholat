@@ -32,6 +32,11 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
 <!doctype html>
 <html lang="en">
   <head>
+    <!--
+    Hai, perkenalkan nama saya Feri Irawan,
+    Ini adalah project pertama saya di bulan ramadhan (Selasa, 13/04/21)
+    Projek ini berisi informasi jadwal sholat untuk masing-masing daerah di Indonesia
+    -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -232,12 +237,6 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
           </div>
         </div>
       </div>
-      
-      <pre>
-        <code>
-          <?php print_r($jadwal);?>
-        </code>
-      </pre>
     </section>
     
     <footer class="p-3 mt-3 text-center">
