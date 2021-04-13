@@ -218,7 +218,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
             </div>
             <div class="row shadow-sm p-3 m-2 rounded">
               <div class="col">
-                <b>Maghrib</b>
+                <b>Maghrib/Buka Puasa</b>
                 <img src="<?=$sholatIcon?>" width="18" height="18">
               </div>
               <div class="col text-end">
