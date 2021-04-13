@@ -84,11 +84,70 @@ $jadwal = json_decode($jadwal, true);
     </div>
     
     <div id="jadwal">
-      <?php foreach ($jadwal as $row): ?>
-      <div class="shadow-sm p-3 mb-3 rounded">
-        <?=$row[1]?>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Imsak</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["imsak"]?>
+        </div>
       </div>
-      <?php endforeach; ?>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Subuh</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["subuh"]?>
+        </div>
+      </div>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Terbit</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["terbit"]?>
+        </div>
+      </div>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Dhuha</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["dhuha"]?>
+        </div>
+      </div>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Dzuhur</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["dzuhur"]?>
+        </div>
+      </div>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Ashar</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["ashar"]?>
+        </div>
+      </div>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Maghrib</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["maghrib"]?>
+        </div>
+      </div>
+      <div class="row shadow-sm p-3 mb-3 rounded">
+        <div class="col">
+          <h5>Isya</h5>
+        </div>
+        <div class="col">
+          <?=$jadwal["jadwal"]["isya"]?>
+        </div>
+      </div>
     </div>
     
     <pre>
