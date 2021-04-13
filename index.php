@@ -31,7 +31,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
 // Function hari, tanggal, tahun
 function format_hari_tanggal($waktu) {
     // Hari
-    $hari_array = ["Ahad", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"]
+    $hari_array = ["Ahad", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
     $hr = date("w", strtotime($waktu));
     $hari = $hari_array[$hr];
     $tanggal = date("j", strtotime($waktu));
@@ -269,7 +269,7 @@ function format_hari_tanggal($waktu) {
       
       <pre>
         <code>
-          <?php print_r($jadwal)?>
+          <?php print_r($jadwal);?>
         </code>
       </pre>
     </section>
