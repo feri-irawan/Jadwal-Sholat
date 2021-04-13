@@ -97,7 +97,7 @@ $jadwal = json_decode($jadwal, true);
     
     <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button">Info Lokasi</button>
+        <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button">Lokasi</button>
         <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button">Jadwal Sholat</button>
       </div>
     </nav>
