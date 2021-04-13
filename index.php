@@ -89,7 +89,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Imsak</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["imsak"]?>
+          <?=$jadwal["data"]["jadwal"]["imsak"]?>
         </div>
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
@@ -97,7 +97,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Subuh</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["subuh"]?>
+          <?=$jadwal["data"]["jadwal"]["subuh"]?>
         </div>
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
@@ -105,7 +105,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Terbit</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["terbit"]?>
+          <?=$jadwal["data"]["jadwal"]["terbit"]?>
         </div>
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
@@ -113,7 +113,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Dhuha</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["dhuha"]?>
+          <?=$jadwal["data"]["jadwal"]["dhuha"]?>
         </div>
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
@@ -121,7 +121,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Dzuhur</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["dzuhur"]?>
+          <?=$jadwal["data"]["jadwal"]["dzuhur"]?>
         </div>
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
@@ -129,7 +129,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Ashar</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["ashar"]?>
+          <?=$jadwal["data"]["jadwal"]["ashar"]?>
         </div>
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
@@ -137,7 +137,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Maghrib</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["maghrib"]?>
+          <?=$jadwal["data"]["jadwal"]["maghrib"]?>
         </div>
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
@@ -145,7 +145,7 @@ $jadwal = json_decode($jadwal, true);
           <b>Isya</b>
         </div>
         <div class="col">
-          <?=$jadwal["jadwal"]["isya"]?>
+          <?=$jadwal["data"]["jadwal"]["isya"]?>
         </div>
       </div>
     </div>
@@ -153,8 +153,6 @@ $jadwal = json_decode($jadwal, true);
     <pre>
       <code>
         <?php
-        print_r($cari);
-        print_r("=================\n");
         print_r($jadwal);
         ?>
       </code>
