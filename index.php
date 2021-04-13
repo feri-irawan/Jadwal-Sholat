@@ -56,7 +56,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
   </head>
   <body>
     
-  <header>
+    <header>
       <nav class="navbar navbar-light bg-light mb-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -65,6 +65,23 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
         </div>
       </nav>
     </header>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Secara default Jadwal Sholat saat ini untuk daerah Bulukumba. Oleh karena itu silahkan lengkapi formulir berikut untuk menampilkan Jadwal Sholat di daerah lainnya.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Saya mengerti</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <section class="container">
       <form class="mb-3" action="" method="get">
