@@ -91,7 +91,9 @@ $jadwal = json_decode($jadwal, true);
           
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">Lanjutkan</button>
+      <div class="text-end">
+        <button class="btn btn-primary" type="submit">Lanjutkan</button>
+      </div>
     </form>
     
     <nav>
