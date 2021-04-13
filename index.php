@@ -266,6 +266,12 @@ function format_hari_tanggal($waktu) {
           </div>
         </div>
       </div>
+      
+      <pre>
+        <code>
+          <?php print_r($jadwal)?>
+        </code>
+      </pre>
     </section>
     
     <footer class="p-3 mt-3 text-center">
