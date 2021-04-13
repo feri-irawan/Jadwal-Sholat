@@ -143,6 +143,7 @@ $jadwal = json_decode($jadwal, true);
             <div class="row shadow-sm p-3 m-2 rounded">
               <div class="col">
                 <b>Subuh</b>
+                <img src="https://static.thenounproject.com/png/3742809-200.png" width="16" height="16">
               </div>
               <div class="col text-end">
                 <?=$jadwal["data"]["jadwal"]["subuh"]?>
@@ -167,6 +168,7 @@ $jadwal = json_decode($jadwal, true);
             <div class="row shadow-sm p-3 m-2 rounded">
               <div class="col">
                 <b>Dzuhur</b>
+                <img src="https://static.thenounproject.com/png/3742809-200.png" width="16" height="16">
               </div>
               <div class="col text-end">
                 <?=$jadwal["data"]["jadwal"]["dzuhur"]?>
@@ -175,6 +177,7 @@ $jadwal = json_decode($jadwal, true);
             <div class="row shadow-sm p-3 m-2 rounded">
               <div class="col">
                 <b>Ashar</b>
+                <img src="https://static.thenounproject.com/png/3742809-200.png" width="16" height="16">
               </div>
               <div class="col text-end">
                 <?=$jadwal["data"]["jadwal"]["ashar"]?>
@@ -183,6 +186,7 @@ $jadwal = json_decode($jadwal, true);
             <div class="row shadow-sm p-3 m-2 rounded">
               <div class="col">
                 <b>Maghrib</b>
+                <img src="https://static.thenounproject.com/png/3742809-200.png" width="16" height="16">
               </div>
               <div class="col text-end">
                 <?=$jadwal["data"]["jadwal"]["maghrib"]?>
@@ -191,6 +195,7 @@ $jadwal = json_decode($jadwal, true);
             <div class="row shadow-sm p-3 m-2 rounded">
               <div class="col">
                 <b>Isya</b>
+                <img src="https://static.thenounproject.com/png/3742809-200.png" width="16" height="16">
               </div>
               <div class="col text-end">
                 <?=$jadwal["data"]["jadwal"]["isya"]?>
