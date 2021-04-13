@@ -94,7 +94,6 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
           <?php else: ?>
             <input value="<?=$_GET["kota"]?>" id="kota" name="kota" type="text" class="form-control" placeholder="Masukan nama kota" aria-describedby="basic-addon1">
           <?php endif; ?>
-          
         </div>
         <div class="input-group mb-3">
               <label for="timezone" class="input-group-text">
@@ -108,7 +107,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
             </div>
         <div class="text-end">
           <button class="btn btn-primary" type="submit">
-            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
+            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
           </button>
         </div>
       </form>
