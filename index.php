@@ -115,7 +115,7 @@ $jadwal = json_decode($jadwal, true);
       ?>
     </div>
     
-    <div id="map" class="map"></div>
+    <div id="map" class="map" onload="getMap(<?=$jadwal["data"]["koordinat"]["lat"]?>,<?=$jadwal["data"]["koordinat"]["lon"]?>)"></div>
     
     <!-- Jadwal Sholat -->
     <h5 class="mt-3 ms-3 me-3">JADWAL</h5>
