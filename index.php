@@ -94,6 +94,9 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
           <?php else: ?>
             <input required value="<?=$_GET["kota"]?>" id="kota" name="kota" type="text" class="form-control" placeholder="Masukan nama kota" aria-describedby="basic-addon1">
           <?php endif; ?>
+          <div class="invalid-feedback">
+            Mohon masukan nama kota/kabupaten
+          </div>
         </div>
         <div class="input-group mb-3">
           <label for="timezone" class="input-group-text">
