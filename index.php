@@ -220,7 +220,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
               <div class="col">
                 <b>Maghrib <img src="<?=$sholatIcon?>" width="18" height="18"> <br />
                 Buka Puasa</b>
-                <img src="https://www.clipartmax.com/png/full/241-2415208_eat-comments-eat-png-free-icon.png" width="16" height="16">
+                <img src="https://icon-library.net/images/eat-icon-png/eat-icon-png-15.jpg" width="16" height="16">
               </div>
               <div class="col text-end">
                 <?=$jadwal["data"]["jadwal"]["maghrib"]?>
