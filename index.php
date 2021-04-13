@@ -45,7 +45,7 @@ $jadwal = json_decode($jadwal, true);
         font-size: 14px;
       }
       .map {
-        height: 400px;
+        height: 250px;
         width: 100%;
       }
     </style>
@@ -113,7 +113,8 @@ $jadwal = json_decode($jadwal, true);
         echo "Zona waktu tidak diketahui";
       }
       ?>
-    <div id="map" class="map"></div>
+      <hr>
+      <div id="map" class="map"></div>
     </div>
     
     
