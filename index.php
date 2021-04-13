@@ -86,7 +86,7 @@ $jadwal = json_decode($jadwal, true);
     <div id="jadwal">
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Imsak</h5>
+          <b>Imsak</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["imsak"]?>
@@ -94,7 +94,7 @@ $jadwal = json_decode($jadwal, true);
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Subuh</h5>
+          <b>Subuh</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["subuh"]?>
@@ -102,7 +102,7 @@ $jadwal = json_decode($jadwal, true);
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Terbit</h5>
+          <b>Terbit</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["terbit"]?>
@@ -110,7 +110,7 @@ $jadwal = json_decode($jadwal, true);
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Dhuha</h5>
+          <b>Dhuha</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["dhuha"]?>
@@ -118,7 +118,7 @@ $jadwal = json_decode($jadwal, true);
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Dzuhur</h5>
+          <b>Dzuhur</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["dzuhur"]?>
@@ -126,7 +126,7 @@ $jadwal = json_decode($jadwal, true);
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Ashar</h5>
+          <b>Ashar</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["ashar"]?>
@@ -134,7 +134,7 @@ $jadwal = json_decode($jadwal, true);
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Maghrib</h5>
+          <b>Maghrib</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["maghrib"]?>
@@ -142,7 +142,7 @@ $jadwal = json_decode($jadwal, true);
       </div>
       <div class="row shadow-sm p-3 mb-3 rounded">
         <div class="col">
-          <h5>Isya</h5>
+          <b>Isya</b>
         </div>
         <div class="col">
           <?=$jadwal["jadwal"]["isya"]?>
