@@ -47,6 +47,7 @@ $jadwal = json_decode($jadwal, true);
       .map {
         height: 250px;
         width: 100%;
+        border-radius: 5px;
       }
     </style>
   </head>
