@@ -153,10 +153,10 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
           <!-- Jadwal Sholat -->
           <div id="jadwal">
             <div class="row shadow-sm p-3 m-2 rounded">
-              <div class="col">
+              <div class="col-4">
                 <b>Tanggal</b>
               </div>
-              <div class="col text-end">
+              <div class="col-8 text-end">
                 <?=$jadwal["data"]["jadwal"]["tanggal"]?>
               </div>
             </div>
