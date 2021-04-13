@@ -132,7 +132,7 @@ $jadwal = json_decode($jadwal, true);
       <div class="tab-pane fade" id="nav-two">
         <!-- Jadwal Sholat -->
         <div id="jadwal">
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Imsak</b>
             </div>
@@ -140,7 +140,7 @@ $jadwal = json_decode($jadwal, true);
               <?=$jadwal["data"]["jadwal"]["imsak"]?>
             </div>
           </div>
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Subuh</b>
             </div>
@@ -148,7 +148,7 @@ $jadwal = json_decode($jadwal, true);
               <?=$jadwal["data"]["jadwal"]["subuh"]?>
             </div>
           </div>
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Terbit</b>
             </div>
@@ -156,7 +156,7 @@ $jadwal = json_decode($jadwal, true);
               <?=$jadwal["data"]["jadwal"]["terbit"]?>
             </div>
           </div>
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Dhuha</b>
             </div>
@@ -164,7 +164,7 @@ $jadwal = json_decode($jadwal, true);
               <?=$jadwal["data"]["jadwal"]["dhuha"]?>
             </div>
           </div>
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Dzuhur</b>
             </div>
@@ -172,7 +172,7 @@ $jadwal = json_decode($jadwal, true);
               <?=$jadwal["data"]["jadwal"]["dzuhur"]?>
             </div>
           </div>
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Ashar</b>
             </div>
@@ -180,7 +180,7 @@ $jadwal = json_decode($jadwal, true);
               <?=$jadwal["data"]["jadwal"]["ashar"]?>
             </div>
           </div>
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Maghrib</b>
             </div>
@@ -188,7 +188,7 @@ $jadwal = json_decode($jadwal, true);
               <?=$jadwal["data"]["jadwal"]["maghrib"]?>
             </div>
           </div>
-          <div class="row shadow-sm p-3 mb-3 rounded">
+          <div class="row shadow-sm p-3 m-2 rounded">
             <div class="col">
               <b>Isya</b>
             </div>
