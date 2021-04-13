@@ -55,7 +55,7 @@ $jadwal = json_decode($jadwal, true);
   <section class="container">
     <form action="" method="get">
       <div class="row">
-        <div class="col">
+        <div class="col-6">
           
           <div class="input-group mb-3">
             <label for="kota" class="input-group-text">
