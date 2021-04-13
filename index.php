@@ -261,7 +261,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
       var myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"), {});
       document.onreadystatechange = function () {
         myModal.show();
-      }
+      };
     }
     </script>
   </body>
