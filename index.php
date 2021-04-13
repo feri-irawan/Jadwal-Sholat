@@ -39,6 +39,7 @@ $jadwal = json_decode($jadwal, true);
     <style>
       #jadwal b {
         text-transform: uppercase;
+        font-size: 14px;
       }
     </style>
   </head>
