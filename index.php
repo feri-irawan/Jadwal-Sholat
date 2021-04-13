@@ -88,7 +88,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Imsak</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["imsak"]?>
         </div>
       </div>
@@ -96,7 +96,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Subuh</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["subuh"]?>
         </div>
       </div>
@@ -104,7 +104,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Terbit</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["terbit"]?>
         </div>
       </div>
@@ -112,7 +112,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Dhuha</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["dhuha"]?>
         </div>
       </div>
@@ -120,7 +120,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Dzuhur</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["dzuhur"]?>
         </div>
       </div>
@@ -128,7 +128,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Ashar</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["ashar"]?>
         </div>
       </div>
@@ -136,7 +136,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Maghrib</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["maghrib"]?>
         </div>
       </div>
@@ -144,7 +144,7 @@ $jadwal = json_decode($jadwal, true);
         <div class="col">
           <b>Isya</b>
         </div>
-        <div class="col">
+        <div class="col text-end">
           <?=$jadwal["data"]["jadwal"]["isya"]?>
         </div>
       </div>
