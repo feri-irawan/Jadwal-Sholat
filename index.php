@@ -76,7 +76,7 @@ $jadwal = json_decode($jadwal, true);
           </div>
           
         </div>
-        <div class="col bg-danger">
+        <div class="col bg-danger p-0">
           
           <div class="input-group m-0">
             <label for="timezone" class="input-group-text">
