@@ -118,7 +118,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
         
         <div class="row">
           <div class="col-6">
-            <div id="time"></div>
+            Sekarang pukul: <div id="time"></div>
           </div>
           <div class="col-6">
             <div class="text-end">
