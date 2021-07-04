@@ -64,7 +64,7 @@ $sholatIcon = "https://static.thenounproject.com/png/3358992-200.png";
     
     <header>
       <nav class="navbar navbar-light bg-light mb-3">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
             Jadwal Sholat
           </a>
